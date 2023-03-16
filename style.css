@@ -1,0 +1,106 @@
+
+@font-face {
+    font-family: 'vazir';
+    src: url('fonts/vazir.eot') format('eot');
+    src: url("fonts/vazir.ttf") format("truetype"),
+      url("fonts/vazir.woff") format("woff"),
+      url("fonts/vazir.woff2") format("woff2");
+}
+
+body{
+    font-family: vazir;
+    background-image: url("cloudy-sky-dawn.jpg");
+    direction: ltr;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+
+.conteiner{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+
+}
+
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius:30px ;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background: rgb(255,255,255,0.5);
+
+}
+
+::-webkit-input-placeholder{
+    color:#fff;
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgb(255,255,255,0.8);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover{
+    box-shadow:1px 5px 7px 1px rgb(0, 0, 0, 0.3) ;
+}
+
+
+.userValidation , .passValidation{
+    color: #fff;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: small;
+}
+
+.modal{
+    background-color: #a72d2a;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    top: 10px;
+    transition: all 1s linear;
+}

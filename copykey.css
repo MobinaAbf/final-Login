@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b3e5fc;
+    min-height: 100vh;
+    width: 100%;
+    background:#fdfcfc ;
+}
+
+.text-boxes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px ;
+    margin-bottom: 60px ;
+}
+
+.text-boxes .text-box{
+    max-width: 660px;
+    height: 380px;
+    width: 100%;
+    margin: 55px 0;
+    
+}
+
+.text-boxes .text-box .topic{
+    font-size: 18px;
+    font-weight:600 ;
+    color:#265df2 ;
+    margin: 4px ;
+}
+
+
+.text-boxes .text-box textarea{
+    height: 100%;
+    width: 100%;
+    padding:30px;
+    font-size:15px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #265df2;
+    border-radius: 8px ;
+    background: #e7edfe;
+
+}
+
+.text-box textarea ::-webkit-scrollbar{
+    display: none;
+}
+
+.text-boxes .text-box button{
+    height: 45px ;
+    width: 155px;
+    color: #fff;
+    background: #265df2;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.text-boxes .text-box button:hover{
+    background: #0c4bf1;
+
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    /* height: 45px; */
+    outline: none;
+    /* width: 100%; */
+    background: #265df2;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    margin: 20px 20px ;
+    padding: 20px;
+}
+
+/* .row1{
+    margin: 20px 0;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+} */
+
+
+
+@media (max-width :400px){
+    .text-boxes .text-box button{
+        width: 100%;
+
+    }
+}
+
+/* .row{
+    float: left;
+    margin: 20px;
+} */
+

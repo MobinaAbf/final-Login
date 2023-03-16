@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body >
+    <div class="box">
+        <div class="conteiner">
+            <div class="top-header">
+                <header>Login  </header>
+            </div>
+
+            <div class="input-field">
+                <input  class="input" type="username" placeholder= "    UserName   "  id="userName" value="" >
+            </div>
+
+            <div class="input-field">
+                <input  class ="input" type="password" placeholder= "    Password    "   id="userPass" value="" >
+            </div>
+
+            <div class="input-field">
+
+    <input type="button" class ="submit" value="Enter " id="button" >
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- <div class="modal "> لطفا اطلاعات را به درستی وارد نمایید </div> -->
+
+    <script >
+
+        var database  = [
+    {
+        username: "user1",
+        password: "pass1"
+    },
+    {
+        username: "user2",
+        password: "pass2"
+    },
+    {
+        username: "user3",
+        password: "pass3"
+    },
+    {
+        username: "user4",
+        password: "pass4"
+    },
+    {
+        username: "user5",
+        password: "pass5"
+    },
+    {
+        username: "user6",
+        password: "pass6"
+    },
+    {
+        username: "user7",
+        password: "pass7"
+    },
+    {
+        username: "user8",
+        password: "pass8"
+    },
+    {
+        username: "user9",
+        password: "pass9"
+    },
+    {
+        username: "user10",
+        password: "pass10"
+    },
+    {
+        username: "user11",
+        password: "pass11"
+    },
+    {
+        username: "user12",
+        password: "pass12"
+    },
+    {
+        username: "user13",
+        password: "pass13"
+    },
+    {
+        username: "user14",
+        password: "pass14"
+    },
+    {
+        username: "user15",
+        password: "pass15"
+    },
+    {
+        username: "user16",
+        password: "pass16"
+    },
+    {
+        username: "user17",
+        password: "pass17"
+    },
+    {
+        username: "user18",
+        password: "pass18"
+    },
+    {
+        username: "user19",
+        password: "pass19"
+    },
+    {
+        username: "user20",
+        password: "pass20"
+    }
+
+]
+function loginFunction(){
+    var username  = document.getElementById ("userName").value;
+    var password  = document.getElementById ("userPass").value;
+
+    let currentUser = database.filter( user=> user.username == username && user.password == password)
+    currentUser.length ?alert("ورود با موفقیت انجام شد "): alert('نام کاربری یا رمز عبور صحیح نمی باشد')
+
+}
+const button = document.getElementById("button");
+    button.addEventListener('click', () => {
+    loginFunction();
+});
+
+    </script>
+</body>
+</html>

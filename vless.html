@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="copykey.css">
+    <link href="{{ url_for('static', filename='vless.css') }}" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vless Configs</title>
+</head>
+<body style="background-color: #bbdefb;">
+
+    <div style="float: right;"> 
+        <input type="button" value="Logout" class="submit " id="button" onclick="myfunction()">
+        <script>
+            var flag = false
+            fetch(`${window.origin}/`, {
+                method: "POST",
+                credentials: "include",
+                body: JSON.stringify(flag),
+                cache: "no-cache",
+                headers: new Headers({"content-type": "application/json"})
+              })
+            window.open('login')
+        </script>>
+
+    </div>
+    <div class="text-boxes">
+        <div class="text-box ABox" >
+            <div class="topic">config-1</div>
+            <textarea id="ABox" readonly>
+                config1
+            </textarea>
+            <button id="AButton">copy </button>
+        </div>
+        <div class="text-box BBox"   >
+            <div class="topic">config-2</div>
+            <textarea id="BBox" readonly>
+                config2
+            </textarea>
+            <button id="BButton">copy </button>
+        </div>
+        <div class="text-box CBox">
+            <div class="topic">config-3</div>
+            <textarea id="CBox" readonly>
+                config3
+            </textarea>
+            <button id="CButton">copy </button>
+        </div>
+        <div class="text-box DBox">
+            <div class="topic">config-4</div>
+            <textarea id="DBox" readonly>
+                config4
+            </textarea>
+            <button id="DButton">copy </button>
+        </div>
+        <div class="text-box EBox">
+            <div class="topic">config-5</div>
+            <textarea id="EBox" readonly>
+                config5
+            </textarea>
+            <button id="EButton">copy </button>
+        </div>
+        <div class="text-box FBox">
+            <div class="topic">config-6</div>
+            <textarea id="FBox" readonly>
+                config6
+            </textarea>
+            <button id="FButton">copy </button>
+        </div>
+        <div class="text-box GBox">
+            <div class="topic">config-7</div>
+            <textarea id="GBox" readonly>
+                config7
+            <button id="GButton">copy </button>
+        </div>
+        <div class="text-box HBox">
+            <div class="topic">config-8</div>
+            <textarea id="HBox" readonly>
+                config8
+            </textarea>
+            <button id="HButton">copy </button>
+        </div>
+        <div class="text-box IBox">
+            <div class="topic">config-9</div>
+            <textarea id="IBox" readonly>
+                config9
+            </textarea>
+            <button id="IButton">copy </button>
+        </div>
+        <div class="text-box JBox">
+            <div class="topic">config-10</div>
+            <textarea id="JBox" readonly>
+                config10
+            </textarea>
+            <button id="JButton">copy </button>
+        </div>
+
+
+    </div>
+    <script>
+        let ABox=document.getElementById('ABox');
+        let AButton=document.getElementById('AButton');
+        AButton.onclick=function(){
+           ABox.select();
+           document.execCommand('copy');
+           let AButton=document.getElementById('AButton');
+           AButton.innerHTML=" Copied "
+        }
+        let BBox=document.getElementById('BBox');
+        let BButton=document.getElementById('BButton');
+        BButton.onclick=function(){
+           BBox.select();
+           document.execCommand('copy');
+           let BButton=document.getElementById('BButton');
+           BButton.innerHTML=" Copied "
+        }
+        let CBox=document.getElementById('CBox');
+        let CButton=document.getElementById('CButton');
+        CButton.onclick=function(){
+           CBox.select();
+           document.execCommand('copy');
+           let CButton=document.getElementById('CButton');
+           CButton.innerHTML=" Copied "
+        }
+        let DBox=document.getElementById('DBox');
+        let DButton=document.getElementById('DButton');
+        DButton.onclick=function(){
+           DBox.select();
+           document.execCommand('copy');
+           let DButton=document.getElementById('DButton');
+           DButton.innerHTML=" Copied "
+        }
+        let EBox=document.getElementById('EBox');
+        let EButton=document.getElementById('EButton');
+        EButton.onclick=function(){
+           EBox.select();
+           document.execCommand('copy');
+           let EButton=document.getElementById('EButton');
+           EButton.innerHTML=" Copied "
+        }
+        let FBox=document.getElementById('FBox');
+        let FButton=document.getElementById('FButton');
+        FButton.onclick=function(){
+           FBox.select();
+           document.execCommand('copy');
+           let FButton=document.getElementById('FButton');
+           FButton.innerHTML=" Copied "
+        }
+        let GBox=document.getElementById('GBox');
+        let GButton=document.getElementById('GButton');
+        GButton.onclick=function(){
+           GBox.select();
+           document.execCommand('copy');
+           let GButton=document.getElementById('GButton');
+           GButton.innerHTML=" Copied "
+        }
+        let HBox=document.getElementById('HBox');
+        let HButton=document.getElementById('HButton');
+        HButton.onclick=function(){
+           HBox.select();
+           document.execCommand('copy');
+           let HButton=document.getElementById('HButton');
+           HButton.innerHTML=" Copied "
+        }
+        let IBox=document.getElementById('IBox');
+        let IButton=document.getElementById('IButton');
+        IButton.onclick=function(){
+           IBox.select();
+           document.execCommand('copy');
+           let IButton=document.getElementById('IButton');
+           IButton.innerHTML=" Copied "
+        }
+        let JBox=document.getElementById('JBox');
+        let JButton=document.getElementById('JButton');
+        JButton.onclick=function(){
+           JBox.select();
+           document.execCommand('copy');
+           let JButton=document.getElementById('JButton');
+           JButton.innerHTML=" Copied "
+        }
+
+        function myfunction()
+        {
+           alert('Bye');
+        }
+
+    </script>
+</body>
+</html>      
